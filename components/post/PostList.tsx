@@ -21,7 +21,7 @@ const PostList = ({ posts }: Props) => {
               {dayjs(post.publishedAt).format("YYYY MM DD")}
             </span>
             <h2 className="text-lg font-semibold">{post.title}</h2>
-            <p className="text-sm text-zinc-500">{post.description}</p>
+            <p className="text-sm text-zinc-400">{post.description}</p>
           </a>
         </li>
       ))}
