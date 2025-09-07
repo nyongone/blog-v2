@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { notFound } from "next/navigation";
 
 export default async function Page({
   params,
@@ -8,7 +9,9 @@ export default async function Page({
   const { slug } = await params;
   const { metadata, default: Post } = await import(
     `@/contents/${slug}/page.mdx`
-  );
+  ).catch(() => {
+    notFound();
+  });
 
   return (
     <>
