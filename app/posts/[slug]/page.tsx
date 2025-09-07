@@ -1,6 +1,10 @@
 import dayjs from "dayjs";
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const { metadata, default: Post } = await import(
     `@/contents/${slug}/page.mdx`
