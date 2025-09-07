@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="ko">
       <body className={pretendard.className}>
         <Header />
-        <main className="mt-8 min-h-[calc(100vh-8rem)] px-6">{children}</main>
+        <main className="m-[0_auto] mt-8 min-h-[calc(100vh-8rem)] w-[min(896px,100%)] px-6">
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import EmailIcon from "@/components/icons/EmailIcon";
 
 const Header = () => {
   return (
-    <header className="flex h-24 w-full flex-row items-center justify-between px-6">
+    <header className="m-[0_auto] flex h-24 w-[min(896px,100%)] flex-row items-center justify-between px-6">
       <a href="/" className="text-lg">
         <span className="text-zinc-500">어이 조씨, </span>
         <span className="font-semibold">코딩</span>
